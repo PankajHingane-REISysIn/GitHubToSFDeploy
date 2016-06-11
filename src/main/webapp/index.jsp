@@ -13,8 +13,8 @@ function githubdeploy()
 {
 	var sfdeployurl =
 		$('#production').attr('checked') ?
-			'https://githubsfdeploy.herokuapp.com/app/githubdeploy' :
-			'https://githubsfdeploy-sandbox.herokuapp.com/app/githubdeploy';
+			'https://sforgdeployment.herokuapp.com/app/githubdeploy' :
+			'https://sforgdeployment-sandbox.herokuapp.com/app/githubdeploy';
 	sfdeployurl+= '/' + $('#owner').val() + '/' + $('#repo').val();
 	window.location = sfdeployurl;
 }
@@ -32,8 +32,8 @@ function updatebuttonhtml()
 	var repoName = $('#repo').val();
 	var buttonhtml =
 		( $('#blogpaste').attr('checked') == 'checked' ? 
-			'<a href="https://githubsfdeploy.herokuapp.com?owner=' + repoOwner +'&repo=' + repoName + '">\n' :
-			'<a href="https://githubsfdeploy.herokuapp.com">\n') +					
+			'<a href="https://sforgdeployment.herokuapp.com?owner=' + repoOwner +'&repo=' + repoName + '">\n' :
+			'<a href="https://sforgdeployment.herokuapp.com">\n') +					
 			'  <img alt="Deploy to Salesforce"\n' +
 			'       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">\n' +
 		'</a>';
