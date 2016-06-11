@@ -90,6 +90,11 @@ function load()
 	      <div class="slds-button-group" role="group">
 	      	<input type="submit" id="login" value="Login to Salesforce" class="slds-button slds-button--neutral" onclick="githubdeploy();return false;"/>
 	      </div>
+	    </div>
+	    <div class="slds-col slds-no-flex slds-align-bottom">
+	      <div class="slds-button-group" role="group">
+	      	<input type="submit" id="login" value="Login to Salesforce Using PMO" class="slds-button slds-button--neutral" onclick="githubdeploy();return false;"/>
+	      </div>
 	    </div>				
 	</div>
 </div>
