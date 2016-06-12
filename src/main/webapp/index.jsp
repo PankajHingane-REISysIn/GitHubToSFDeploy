@@ -18,6 +18,15 @@ function githubdeploy()
 	sfdeployurl+= '/' + $('#owner').val() + '/' + $('#repo').val();
 	window.location = sfdeployurl;
 }
+function githubPMOdeploy()
+{
+	var sfdeployurl =
+		$('#production').attr('checked') ?
+			'https://sforgdeployment.herokuapp.com/app/githubdeploy' :
+			'https://sforgdeployment-sandbox.herokuapp.com/app/githubdeploy';
+	sfdeployurl+= '/PankajHingane-REISysIn/KnowledgeArticleExportImport';
+	window.location = sfdeployurl;
+}
 function togglebuttoncode()
 {
 	updatebuttonhtml();
@@ -93,7 +102,7 @@ function load()
 	    </div>
 	    <div class="slds-col slds-no-flex slds-align-bottom">
 	      <div class="slds-button-group" role="group">
-	      	<input type="submit" id="login" value="Login to Salesforce Using PMO" class="slds-button slds-button--neutral" onclick="githubdeploy();return false;"/>
+	      	<input type="submit" id="login" value="Login to Salesforce Using PMO" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
 	      </div>
 	    </div>				
 	</div>
