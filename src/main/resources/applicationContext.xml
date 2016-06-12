@@ -26,10 +26,15 @@
     <!--suppress SpringModelInspection -->
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
-    <fss:oauth logout-url="/logout" default-logout-success="/">
-        <fss:oauthInfo endpoint="#{systemEnvironment['SFDC_END_POINT']}"
-                       oauth-key="#{systemEnvironment['SFDC_OAUTH_CLIENT_ID']}"
-                       oauth-secret="#{systemEnvironment['SFDC_OAUTH_CLIENT_SECRET']}"/>
+<!--     <fss:oauth logout-url="/logout" default-logout-success="/"> -->
+<!--         <fss:oauthInfo endpoint="#{systemEnvironment['SFDC_END_POINT']}" -->
+<!--                        oauth-key="#{systemEnvironment['SFDC_OAUTH_CLIENT_ID']}" -->
+<!--                        oauth-secret="#{systemEnvironment['SFDC_OAUTH_CLIENT_SECRET']}"/> -->
+<!--     </fss:oauth> -->
+	<fss:oauth logout-url="/logout" default-logout-success="/">
+        <fss:oauthInfo endpoint="https://login.salesforce.com/"
+                       oauth-key="3MVG98XJQQAccJQfuGP93_6umA50R9YS0luN7tgI6wYC\\.\\.FQkyuP2mwoCoMpbqGMuE09sI_3w55Ro3QoDgnwr"
+                       oauth-secret="4797524477236140212"/>
     </fss:oauth>
 
     <security:http use-expressions="true">
