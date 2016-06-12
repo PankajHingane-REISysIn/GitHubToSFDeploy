@@ -87,7 +87,7 @@ import com.sforce.ws.parser.XmlOutputStream;
 
 @Controller
 @RequestMapping("/githubdeploy1")
-public class GitHubSalesforceDeployController {
+public class GitHubSalesforceDeployController { 
 
 	// Allocated via your GitHub Account Settings, set as environment vars, provides increased limits per hour for GitHub API calls
 	private static String GITHUB_CLIENT_ID = "GITHUB_CLIENT_ID";
