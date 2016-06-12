@@ -32,7 +32,7 @@
                        oauth-secret="#{systemEnvironment['SFDC_OAUTH_CLIENT_SECRET']}"/>
     </fss:oauth>
 <!--     <fss:oauth logout-url="/logout" default-logout-success="/"> -->
-<!--         <fss:oauthInfo endpoint="#{systemEnvironment['SFDC_END_POINT']}" -->
+<!--         <fss:oauthInfo endpoint="https://login.salesforce.com/" -->
 <!--                        oauth-key="#{systemEnvironment['SFDC_OAUTH_CLIENT_ID']}" -->
 <!--                        oauth-secret="#{systemEnvironment['SFDC_OAUTH_CLIENT_SECRET']}"/> -->
 <!--     </fss:oauth> -->
