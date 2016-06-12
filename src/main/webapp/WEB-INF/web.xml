@@ -6,10 +6,10 @@
 
     <display-name>Spring-Hibernate-Template</display-name>
 
-<!--     <filter> -->
-<!--       <filter-name>OAuthConfigChecker</filter-name> -->
-<!--       <filter-class>com.andyinthecloud.githubsfdeploy.config.OAuthConfigChecker</filter-class> -->
-<!--     </filter> -->
+    <filter>
+      <filter-name>OAuthConfigChecker</filter-name>
+      <filter-class>com.andyinthecloud.githubsfdeploy.config.OAuthConfigChecker</filter-class>
+    </filter>
     <filter-mapping>
       <filter-name>OAuthConfigChecker</filter-name>
       <url-pattern>/app/*</url-pattern>
