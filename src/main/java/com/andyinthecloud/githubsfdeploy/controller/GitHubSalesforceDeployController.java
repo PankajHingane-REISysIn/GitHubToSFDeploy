@@ -101,7 +101,7 @@ public class GitHubSalesforceDeployController {
 		return retUrl != null ? "redirect:" + retUrl : "redirect:/index.jsp";
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value="/authorizegh")
+	/*@RequestMapping(method = RequestMethod.GET, value="/authorizegh")
 	public String authorize(@RequestParam final  String code, @RequestParam final  String state, HttpSession session) throws Exception
 	{
 		URL url = new URL("https://github.com/login/oauth/access_token");
@@ -437,7 +437,7 @@ public class GitHubSalesforceDeployController {
 		DeployResult deployResult = metadataConnection.checkDeployStatus(asyncId);
 		ObjectMapper objectMapper = new ObjectMapper();
 		return objectMapper.writeValueAsString(printErrors(deployResult));
-	}
+	}*/
 
 	/**
 	 * Used with the Jackson JSON library to exclude conflicting getters when serialising AsyncResult
