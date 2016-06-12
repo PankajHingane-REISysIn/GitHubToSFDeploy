@@ -16,6 +16,6 @@ public class SfdcApiSessionProviderFromSpringMvc implements SfdcApiSessionProvid
 
     @Override
     public String getApiEndpoint() {
-        return ForceSecurityContextHolder.get(true).getEndPointHost();
+        return "https://login.salesforce.com/";//ForceSecurityContextHolder.get(true).getEndPointHost();
     }
 }
