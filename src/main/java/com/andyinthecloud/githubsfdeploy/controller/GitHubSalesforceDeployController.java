@@ -86,7 +86,7 @@ import com.sforce.ws.bind.TypeMapper;
 import com.sforce.ws.parser.XmlOutputStream;
 
 @Controller
-@RequestMapping("/githubdeploy")
+@RequestMapping("/githubdeploy1")
 public class GitHubSalesforceDeployController {
 
 	// Allocated via your GitHub Account Settings, set as environment vars, provides increased limits per hour for GitHub API calls
@@ -94,14 +94,14 @@ public class GitHubSalesforceDeployController {
 	private static String GITHUB_CLIENT_SECRET = "GITHUB_CLIENT_SECRET";
 	private static String GITHUB_TOKEN = "ghtoken";
 
-	@RequestMapping(method = RequestMethod.GET, value="/logoutgh")
+	/*@RequestMapping(method = RequestMethod.GET, value="/logoutgh")
 	public String logoutgh(HttpSession session,@RequestParam(required=false) final String retUrl)
 	{
 		session.removeAttribute(GITHUB_TOKEN);
 		return retUrl != null ? "redirect:" + retUrl : "redirect:/index.jsp";
 	}
 
-	/*@RequestMapping(method = RequestMethod.GET, value="/authorizegh")
+	@RequestMapping(method = RequestMethod.GET, value="/authorizegh")
 	public String authorize(@RequestParam final  String code, @RequestParam final  String state, HttpSession session) throws Exception
 	{
 		URL url = new URL("https://github.com/login/oauth/access_token");
