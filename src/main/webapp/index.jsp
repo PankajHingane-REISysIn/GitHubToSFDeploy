@@ -104,7 +104,18 @@ function load()
 	      <div class="slds-button-group" role="group">
 	      	<input type="submit" id="login" value="Login to Salesforce Using PMO" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
 	      </div>
-	    </div>				
+	    </div>	
+	    <div class="slds-col slds-no-flex slds-align-bottom">
+	      <div class="slds-button-group" role="group">
+	      	<input type="submit" id="login" value="deploy TST from TST Branch" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
+	      </div>
+	    </div>
+	    <div class="slds-col slds-no-flex slds-align-bottom">
+	      <div class="slds-button-group" role="group">
+	      	<input type="submit" id="login" value="deploy Production from Master Branch" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
+	      </div>
+	    </div>
+	    			
 	</div>
 </div>
 &nbsp;
