@@ -27,6 +27,11 @@ function githubPMOdeploy()
 	sfdeployurl+= '/PankajHingane-REISysIn/KnowledgeArticleExportImport';
 	window.location = sfdeployurl;
 }
+
+function TSTDeploymentFromTestBranch() {
+	var sfdeployurl = 'https://sforgdeployment.herokuapp.com/app/vboxsfdeployment';
+	window.location = sfdeployurl;
+}
 function togglebuttoncode()
 {
 	updatebuttonhtml();
@@ -107,12 +112,12 @@ function load()
 	    </div>	
 	    <div class="slds-col slds-no-flex slds-align-bottom">
 	      <div class="slds-button-group" role="group">
-	      	<input type="submit" id="login" value="deploy TST from TST Branch" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
+	      	<input type="submit" id="login" value="deploy TST from TST Branch" class="slds-button slds-button--neutral" onclick="TSTDeploymentFromTestBranch();return false;"/>
 	      </div>
 	    </div>
 	    <div class="slds-col slds-no-flex slds-align-bottom">
 	      <div class="slds-button-group" role="group">
-	      	<input type="submit" id="login" value="deploy Production from Master Branch" class="slds-button slds-button--neutral" onclick="githubPMOdeploy();return false;"/>
+	      	<input type="submit" id="login" value="deploy Production from Master Branch" class="slds-button slds-button--neutral" onclick="ProductionDeploymentFromMaster();return false;"/>
 	      </div>
 	    </div>
 	    			
