@@ -95,8 +95,8 @@ function load()
 	      </div>
 	    </div>
 </form>
-<form onsubmit="loginToSalesforce();return false;">
-
+<form onsubmit="return false;">
+loginToSalesforce();
 <div class="slds-page-header" role="banner">
 	<div class="slds-grid">
     	<div class="slds-col slds-has-flexi-truncate">
